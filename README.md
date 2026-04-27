@@ -10,12 +10,16 @@ To write a program to predict the price of the house and number of occupants in 
 ## Algorithm
 1.Load and Prepare Data
 Import required libraries and load the dataset using pandas. Clean column names and separate input features (Size, Bedrooms) and target variables (Price, Occupants).
+
 2.Scale the Features
 Apply feature scaling using StandardScaler to normalize the input data, which improves the performance of SGD.
+
 3.Initialize the Models
 Create two SGD Regressor models—one for predicting price and another for predicting occupants—with suitable parameters.
+
 4.Train the Models
 Fit both models using the scaled input data and their respective target values.
+
 5.Predict Output
 Take user input (house size and bedrooms), scale it using the same scaler, and use both trained models to predict and display the price and number of occupants.
 
